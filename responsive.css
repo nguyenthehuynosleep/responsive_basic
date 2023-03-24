@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    background-color: #1abc9c;
+}
+#main-menu{
+    display: flex;
+}
+nav #main-menu li a{
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+nav #main-menu li:hover a{
+    background: #f1c40f;
+    transition: all 0.5s;
+}
+#toggle{
+    display: none;
+    background: #ecf0f1;
+    color: #30336b;
+    text-align: right;
+    padding: 10px 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 638px) {
+    #main-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    
+}

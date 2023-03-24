@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('nav').slideToggle();
+
+            });
+        })
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>  
+            </div>
+            <nav>
+                <ul id="main-menu">
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="">Dịch vụ</a></li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                </ul>
+    
+
+
+            </nav>
+        </div>
+    </div>
+    
+</body>
+</html>
